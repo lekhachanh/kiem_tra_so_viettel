@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    function CheckVietel(str) {
+        check = /^(03[2-9]|086|09[6-8])[0-9]{7}$/;
+        if (check.test(str)) {
+            return true
+        }
+        return false
+    }
+    let sdt = ['0963456748', '0973456748', '0975524068', '0385037598', '01233457689', '08731237833', '0397893950'];
+    for (let i=0; i<sdt.length; i++) {
+        if (CheckVietel(sdt[i])) {
+            alert("số vietel là "+sdt[i]);
+        }
+    }
+</script>
+</body>
+</html>
